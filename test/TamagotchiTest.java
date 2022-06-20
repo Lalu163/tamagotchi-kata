@@ -12,7 +12,7 @@ public class TamagotchiTest {
         tamagotchi.play();
         String mood = tamagotchi.play();
 
-        assertThat(mood, equalTo("(-_-"));
+        assertThat(mood, equalTo("(-_-)"));
     }
 
 }
