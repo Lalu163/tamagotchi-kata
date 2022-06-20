@@ -1,12 +1,18 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class TamagotchiTest {
 
     @Test
-    public void proveThatTheInitialPunctuationIs4(){
+    public void whenTamagotchiPlaysHesTired(){
         Tamagotchi tamagotchi = new Tamagotchi();
-        Assert.assertEquals(4,tamagotchi.hunger(4));
+        tamagotchi.play();
+        String mood = tamagotchi.play();
+
+        assertThat(mood, equalTo("(-_-"));
     }
 
 }

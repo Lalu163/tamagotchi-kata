@@ -1,5 +1,11 @@
 public class Tamagotchi {
-    public int hunger(int initialHunger) {
-        return initialHunger;
+
+    private int hunger= 4;
+    private int energy= 4;
+    private int mood =4;
+
+
+    public String play() {
+        return null;
     }
 }
